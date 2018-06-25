@@ -22,7 +22,7 @@ class User(Model):
 
 
 class Blog(Model):
-	__table__ = 'blog'
+	__table__ = 'blogs'
 
 	id = StringField(primary_key=True,default=next_id,ddl='varchar(50)')
 	user_id = StringField(updatable=False,ddl='varchar(50)')
